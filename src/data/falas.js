@@ -53,5 +53,6 @@ export default [
   `Qué pipoca! Tó a pipoca. 🍿`,
   `Qué pipoca bem? 🍿`,
   `Pipoca! 🍿`,
-  `Ai que fofu! 🐨`
+  `Ai que fofu! 🐨`,
+  `Tá forte! Rapaz forte, bonito, Clebão! 💪`
 ]
