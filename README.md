@@ -1,4 +1,6 @@
-# vovo-juju-ipsum
+# Vovó Juju falas
+
+> Gerador de falas da fofa da vovó Juju (animação Irmão do Jorel)
 
 ## Project setup
 ```
