@@ -8,13 +8,17 @@
         :imageSrc="`${require('../assets/vovo.png')}`"
         imageAlt="Ai que linda a Vovó Juju, bem!"
         :htmlBox="html"
-      ></talk-box>
-      <button class="VovoJuju__button" v-on:click="generate">Fala comigo Vovó Juju!</button>
+      >
+        <button class="VovoJuju__button" v-on:click="generate">
+          Fala comigo Vovó Juju!
+        </button>
+      </talk-box>
     </div>
   </div>
 </template>
 
 <script>
+import { mapState, mapActions } from 'vuex'
 import loremIpsum from 'lorem-ipsum'
 import Falas from '../data/falas.js'
 
@@ -42,9 +46,23 @@ export default {
       numberOfParagraphs: 1
     }
   },
-  created: function() {
+  created () {
+    this.setImages([
+      'vovojuju.jpg',
+      'vovo-irmao-do-jorel.jpg',
+      'vovo-abacate.png',
+      'vovo-raper.jpg',
+      'vovo-raper2.jpg'
+    ])
+    this.setTalks(Falas)
     this.generate()
-    // window.addEventListener('keyup', this.generate)
+    window.addEventListener('keyup', this.generate)
+  },
+  computed: {
+    ...mapState({
+      talks: state => state.talks,
+      images: state => state.images
+    })
   },
   methods: {
     shuffleArray (arr) {
@@ -54,26 +72,7 @@ export default {
         .map(a => a[1])
     },
     vovoImage () {
-      const images = [
-        'vovojuju.jpg',
-        'vovo-irmao-do-jorel.jpg',
-        'vovo-abacate.png',
-        'vovo-raper.jpg',
-        'vovo-raper2.jpg'
-      ]
-      return this.shuffleArray(images)[0]
-    },
-    copy () {
-      var textArea = document.createElement('textarea')
-      document.body.appendChild(textArea)
-      textArea.value = this.html
-      textArea.select()
-      try {
-        document.execCommand('copy')
-      } catch (err) {
-        console.log('error')
-      }
-      document.body.removeChild(textArea)
+      return this.shuffleArray(this.images)[0]
     },
     generate () {
       var output = loremIpsum({
@@ -84,10 +83,14 @@ export default {
         paragraphLowerBound: 1,
         paragraphUpperBound: this.paragraphLengthSelected,
         format: this.formatSelected,
-        words: Falas
+        words: this.talks
       })
       this.html = output
-    }
+    },
+    ...mapActions([
+      'setImages',
+      'setTalks'
+    ])
   }
 }
 </script>
@@ -142,12 +145,12 @@ export default {
     color #242424
     transition all 0.15s ease
     box-sizing border-box
-    border 1px solid #242424
+    border 1px solid darken(#EBE3D9, 15%)
     margin 1em 0
     font-size .9em
     font-weight 600
     letter-spacing 0.1em
     text-transform uppercase
     cursor pointer
-    background-color #C3EAEE
+    background-color #EBE3D9
 </style>

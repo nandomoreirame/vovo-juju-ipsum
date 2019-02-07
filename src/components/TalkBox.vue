@@ -3,7 +3,10 @@
     <figure class="TalkBox__image">
       <img :src="imageSrc" :alt="imageAlt">
     </figure>
-    <div class="TalkBox__box" v-html="htmlBox"/>
+    <div>
+      <div class="TalkBox__box" v-html="htmlBox"/>
+      <slot></slot>
+    </div>
   </div>
 </template>
 
