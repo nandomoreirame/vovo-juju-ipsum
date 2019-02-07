@@ -55,5 +55,7 @@ export default [
   `Pipoca! 🍿`,
   `Ai que fofu! 🐨`,
   `Tá forte! Rapaz forte, bonito, Clebão! 💪`,
-  `Clebão! Atleta! Ator de TV e atleta! 💪`
+  `Clebão! Atleta! Ator de TV e atleta! 💪`,
+  `Não dá esse desgosto pra sua mãe`,
+  `Fifito é esperto. Vai Fifito. 🐶`
 ]
