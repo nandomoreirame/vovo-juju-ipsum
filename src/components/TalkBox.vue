@@ -45,7 +45,7 @@ export default {
   &__box
     background-color #fff
     padding .625rem /* 10/16 */ 1.875rem /* 30/16 */
-    box-shadow 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+    // box-shadow 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
     transition all 0.3s cubic-bezier(.25,.8,.25,1)
     border-bottom 1px solid #ddd
     display block
@@ -56,13 +56,40 @@ export default {
     @media screen and (min-width: 768px)
       margin 3.125rem /* 50/16 */ 0 0
       display table-cell
+    &:before,
     &:after
-      content ''
+      pointer-events none
       position absolute
+      content " "
+      height 0
+      width 0
+      border solid transparent
+      @media screen and (max-width: 768px)
+        top 100%
+        left 50%
       @media screen and (min-width: 768px)
-        left -.75rem /* 12/16 */
-        top 2.5rem /* 40/16 */
-        border-right .75rem /* 12/16 */ solid #fff
-        border-top .75rem /* 12/16 */ solid transparent
-        border-bottom .75rem /* 12/16 */ solid transparent
+        right 100%
+        top 50%
+    &:before
+      @media screen and (max-width: 768px)
+        border-color rgba(221, 221, 221, 0)
+        border-top-color #ddd
+        border-width 13px
+        margin-left -13px
+      @media screen and (min-width: 768px)
+        border-color rgba(221, 221, 221, 0)
+        border-right-color #ddd
+        border-width 13px
+        margin-top -13px
+    &:after
+      @media screen and (max-width: 768px)
+        border-color rgba(255, 255, 255, 0)
+        border-top-color #fff
+        border-width 12px
+        margin-left -12px
+      @media screen and (min-width 768px)
+        border-color rgba(255, 255, 255, 0)
+        border-right-color #fff
+        border-width 12px
+        margin-top -12px
 </style>
