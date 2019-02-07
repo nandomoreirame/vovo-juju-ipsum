@@ -95,38 +95,45 @@ export default {
 <style lang="stylus" scoped>
 .VovoJuju
   width 100%
-  height 100%
-  margin-left auto
-  margin-right auto
-  display flex
-  align-items center
-  justify-content center
   background-position 50%
   background-repeat no-repeat
   background-size cover
+  display flex
+  @media screen and (min-width: 768px)
+    height 100%
+    align-items center
+    justify-content center
   &:before
     content ''
     display block
-    position absolute
+    position fixed
     top 0
     right 0
     bottom 0
     left 0
     width 100%
-    height 100%
+    // height 100%
     background rgba(#BAE6EB, .9)
     z-index 10
   &__inner
     position relative
     z-index 100
+    padding 1.25rem /* 20/16 */
+    @media screen and (max-width: 768px)
+      text-align center
   &__header
-    margin-bottom 3.75rem /* 60/16 */
+    margin 1.875rem /* 30/16 */ 0
+    @media screen and (min-width: 768px)
+      padding 1.25rem /* 20/16 */
     h1
       text-align center
       text-transform uppercase
       font-weight 400
+      font-size 1.75rem /* 28/16 */
       small
         display block
+      @media screen and (min-width: 768px)
+        font-size 2.375rem /* 38/16 */
   &__button
     padding 0.65em 1.55em
     border-radius 6px

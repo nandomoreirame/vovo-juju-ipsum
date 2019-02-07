@@ -35,17 +35,24 @@ body
 .App
   &__by,
   &__repo
-    position fixed
     z-index 1000
     opacity .5
     transition opacity .2s ease-in-out
+    @media screen and (min-width: 768px)
+      position fixed
     &:hover
       opacity 1
   &__by
-    right 20px
     padding 10px
-    bottom 20px
+    @media screen and (min-width: 768px)
+      right 20px
+      bottom 20px
   &__repo
-    top 1.25rem /* 20/16 */
-    left 1.25rem /* 20/16 */
+    @media screen and (min-width: 768px)
+      top 1.25rem /* 20/16 */
+      left 1.25rem /* 20/16 */
+  &__footer
+    display block
+    @media screen and (max-width: 768px)
+      margin-top 30px
 </style>
