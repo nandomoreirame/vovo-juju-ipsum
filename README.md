@@ -2,6 +2,12 @@
 
 > Gerador de falas da fofa da vovó Juju (animação Irmão do Jorel)
 
+![Vovó Juju falas](/src/assets/vovo.png)
+
+## [Demo](https://vovojuju.nandomoreira.me/)
+
+[https://vovojuju.nandomoreira.me/](https://vovojuju.nandomoreira.me/)
+
 ## Project setup
 ```
 yarn install
