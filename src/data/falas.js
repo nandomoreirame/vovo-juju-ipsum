@@ -46,6 +46,8 @@ export default [
   `O que? Não gosta de abacate?! 🥑`,
   `Abacate! Abacate! Abacate! 🥑`,
   `Meu sapato! Sapato? Sapato! 👠`,
+  `Eu vou pegar uma colher. Que caiu. Aqui em baixo da mesa. 🥄`,
+  `Achei! Achei a colher! 🥄 Ahhh! Cabô torta flambada`,
   `Meu sapato preferidu! 👠`,
   `Comeu maionese? 🌭`,
   `Qué pipoca! Tó a pipoca. 🍿`,
