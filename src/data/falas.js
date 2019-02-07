@@ -54,5 +54,6 @@ export default [
   `Qué pipoca bem? 🍿`,
   `Pipoca! 🍿`,
   `Ai que fofu! 🐨`,
-  `Tá forte! Rapaz forte, bonito, Clebão! 💪`
+  `Tá forte! Rapaz forte, bonito, Clebão! 💪`,
+  `Clebão! Atleta! Ator de TV e atleta! 💪`
 ]
