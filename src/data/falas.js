@@ -57,5 +57,20 @@ export default [
   `Tá forte! Rapaz forte, bonito, Clebão! 💪`,
   `Clebão! Atleta! Ator de TV e atleta! 💪`,
   `Não dá esse desgosto pra sua mãe`,
-  `Fifito é esperto. Vai Fifito. 🐶`
+  `Fifito é esperto. Vai Fifito! 🐶`,
+  `Que bonitinha minha boneca! Que bonitinha minha boneca!`,
+  `Segue reto! Olha! Segue reto! 🚘`,
+  `Entra! É aventura bem. 🚘`,
+  `Lenço. Lenço bonito. 🧕🏼`,
+  `Perseguição tem que ter música! 🎵`,
+  `Tem que da a seta. 🚘`,
+  `Fica assim não. O destino não é o mais importante. O que importa, é a estrada bem. 🛣`,
+  `Olha o farol alto moço. 🚘`,
+  `O moço engasgou. Que perigoo 😱`,
+  `Coloca os braços pra cima. Levanta os braços! Issoo. 🙌`,
+  `Põe a mão pra cima. Põe. 🙌`,
+  `Que feio. Sujando a estrada. 🛣`,
+  `Siga. Reto. Por. Duzentos. Quilometros. 🛣`,
+  `Vestindo uma galocha só. Rebeldi! 👞`,
+  `Ai que perigoooo`
 ]
