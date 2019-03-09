@@ -43,7 +43,7 @@ Contribua!
 
 ## History
 
-Veja as [Releases](https://github.com/nandomoreirame/readme-boilerplate/releases) para o changelog detalhado..
+Veja as [Releases](../../releases) para o changelog detalhado..
 
 ## Autor
 
