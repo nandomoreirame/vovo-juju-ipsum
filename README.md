@@ -2,6 +2,10 @@
 
 > Gerador de falas da fofa da vovó Juju (animação Irmão do Jorel)
 
+<a href="https://picpay.me/oseunando">
+  <img src="https://img.shields.io/badge/Pague%20um%20caf%C3%A9-R%24%205%2C00-blue.svg" alt="http://picpay.me/oseunando">
+</a>
+
 ![Vovó Juju falas](/src/assets/vovo.png)
 
 ## [Demo](https://vovojuju.nandomoreira.me/)
