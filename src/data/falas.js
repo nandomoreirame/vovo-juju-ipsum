@@ -72,5 +72,6 @@ export default [
   `Que feio. Sujando a estrada. 🛣`,
   `Siga. Reto. Por. Duzentos. Quilometros. 🛣`,
   `Vestindo uma galocha só. Rebeldi! 👞`,
-  `Ai que perigoooo`
-]
+  `Ai que perigoooo`,
+  `Come abacate, bem 🥑`
+];
