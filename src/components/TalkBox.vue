@@ -1,11 +1,13 @@
 <template>
   <div class="TalkBox">
     <figure class="TalkBox__image">
-      <img :src="imageSrc" :alt="imageAlt">
+      <img :src="imageSrc" :alt="htmlBox" />
     </figure>
     <div>
-      <div class="TalkBox__box" v-html="htmlBox"/>
-      <slot></slot>
+      <div class="TalkBox__box">
+        <p  v-text="htmlBox" />
+      </div>
+      <slot />
     </div>
   </div>
 </template>
@@ -16,7 +18,7 @@ export default {
   props: {
     imageSrc: {
       type: String,
-      default: '../assets/vovo.png'
+      default: '~/assets/vovo.png'
     },
     imageAlt: {
       type: String,

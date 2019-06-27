@@ -1,12 +1,12 @@
 <template>
-  <div class="VovoJuju" :style="`background-image: url(${require(`../assets/${vovoImage()}`)})`">
+  <div class="VovoJuju" :style="`background-image: url(${vovoImage()})`">
     <div class="VovoJuju__inner">
       <header class="VovoJuju__header">
         <h1>Gerador de falas da <strong>Vovó Juju</strong> <small>(Irmão do Jorel)</small></h1>
       </header>
       <talk-box
-        :imageSrc="`${require('../assets/vovo.png')}`"
-        imageAlt="Ai que linda a Vovó Juju, bem!"
+        :imageSrc="`${require('@/assets/vovo.png')}`"
+        :imageAlt="html"
         :htmlBox="html"
       >
         <button class="VovoJuju__button" v-on:click="generate">
@@ -20,7 +20,6 @@
 <script>
 import { mapState, mapActions } from 'vuex'
 import loremIpsum from 'lorem-ipsum'
-import Falas from '../data/falas.js'
 
 export default {
   name: 'VovoJuju',
@@ -30,7 +29,7 @@ export default {
   data() {
     return {
       html: 'text',
-      formatSelected: 'html',
+      formatSelected: 'text',
       formatOptions: ['text', 'html'],
       paragraphLength: [{
         label: 'short',
@@ -47,21 +46,24 @@ export default {
     }
   },
   created () {
-    this.setImages([
+    const images = [
       'vovojuju.jpg',
       'vovo-irmao-do-jorel.jpg',
       'vovo-abacate.png',
       'vovo-raper.jpg',
       'vovo-raper2.jpg'
-    ])
-    this.setTalks(Falas)
-    this.generate()
-    window.addEventListener('keyup', this.generate)
+    ]
+
+    this.setTalks()
+      .then(() => this.setImages(images))
+      .then(() => this.generate())
+
+    // window.addEventListener('keyup', this.generate)
   },
   computed: {
     ...mapState({
-      talks: state => state.talks,
-      images: state => state.images
+      talks: ({ talks }) => talks,
+      images: ({ images }) => images
     })
   },
   methods: {
@@ -72,10 +74,10 @@ export default {
         .map(a => a[1])
     },
     vovoImage () {
-      return this.shuffleArray(this.images)[0]
+      return require(`@/assets/${this.shuffleArray(this.images)[0]}`)
     },
     generate () {
-      var output = loremIpsum({
+      this.html = loremIpsum({
         count: this.numberOfParagraphs,
         units: 'paragraphs',
         sentenceLowerBound: 1,
@@ -85,7 +87,6 @@ export default {
         format: this.formatSelected,
         words: this.talks
       })
-      this.html = output
     },
     ...mapActions([
       'setImages',
