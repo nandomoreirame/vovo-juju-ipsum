@@ -5,7 +5,7 @@
     </figure>
     <div>
       <div class="TalkBox__box">
-        <p  v-text="htmlBox" />
+        <p v-text="htmlBox" />
       </div>
       <slot />
     </div>
@@ -18,17 +18,17 @@ export default {
   props: {
     imageSrc: {
       type: String,
-      default: '~/assets/vovo.png'
+      default: '~/assets/vovo.png',
     },
     imageAlt: {
       type: String,
-      default: 'Ai que linda a Vovó Juju, bem!'
+      default: 'Ai que linda a Vovó Juju, bem!',
     },
     htmlBox: {
       type: String,
-      require: true
-    }
-  }
+      require: true,
+    },
+  },
 }
 </script>
 

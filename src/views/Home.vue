@@ -1,6 +1,6 @@
 <template>
   <div class="Home">
-    <vovo-juju/>
+    <vovo-juju />
   </div>
 </template>
 
@@ -8,8 +8,8 @@
 export default {
   name: 'Home',
   components: {
-    VovoJuju: () => import('@/components/VovoJuju')
-  }
+    VovoJuju: () => import('@/components/VovoJuju'),
+  },
 }
 </script>
 
@@ -18,4 +18,3 @@ export default {
   width 100%
   height 100%
 </style>
-

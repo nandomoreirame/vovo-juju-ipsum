@@ -47,7 +47,7 @@ Veja as [Releases](../../releases) para o changelog detalhado..
 
 ## Autor
 
-| [![twitter/oseunando](https://avatars6.githubusercontent.com/u/1318271?v=4&s=120)](http://twitter.com/oseunando "Siga @oseunando no Twitter") |
+| [![twitter/oseunando](https://avatars6.githubusercontent.com/u/1318271?v=4&s=120)](http://twitter.com/oseunando 'Siga @oseunando no Twitter') |
 | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Fernando Moreira](http://twitter.com/oseunando)                                                                                              |
 
@@ -67,7 +67,6 @@ WWWWWW||WWWWWW
 ```
 
 Código está sob a [licença MIT](/LICENSE) - © Fernando Moreira
-
 
 ## Me pague um café?
 
