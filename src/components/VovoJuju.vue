@@ -83,8 +83,6 @@ export default {
       text-align center
   &__header
     margin 1.875rem /* 30/16 */ 0
-    @media screen and (min-width: 768px)
-      padding 1.25rem /* 20/16 */
     h1
       text-align center
       text-transform uppercase
