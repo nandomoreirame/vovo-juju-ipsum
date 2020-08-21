@@ -47,6 +47,8 @@ export default {
     margin 0
     padding 0
     text-align center
+    img
+      width 100%
   &__box
     background-color #fff
     padding .625rem /* 10/16 */ 1.875rem /* 30/16 */
