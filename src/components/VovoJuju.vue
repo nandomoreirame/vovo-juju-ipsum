@@ -79,7 +79,9 @@ export default {
     position relative
     z-index 100
     padding 1.25rem /* 20/16 */
+    width initial
     @media screen and (max-width: 768px)
+      width 100%
       text-align center
   &__header
     margin 1.875rem /* 30/16 */ 0
