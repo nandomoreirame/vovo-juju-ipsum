@@ -6,7 +6,7 @@
 
 ## [Demo](https://vovojuju.nandomoreira.me/)
 
-[https://vovojuju.nandomoreira.me/](https://vovojuju.nandomoreira.me/)
+[https://vovojuju.netlify.app](https://vovojuju.netlify.app)
 
 ## Instalação
 
